@@ -1,0 +1,9 @@
+services:
+  openai-assistant:
+    image: openai-assistant
+    container_name: openai-assistant
+    restart: always
+    ports:
+      - "8555:8501"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
